@@ -86,3 +86,8 @@ const Circle1 = new Circle(5);
 const Rectangle1 = new Rectangle(3,4);
 
 console.log( 'Circle1: ', Circle1, 'Rectangle1 : ', Rectangle1);
+
+
+// 13. compiler 확인해 보기
+var hello = 'hello_var';
+let hello1 = 'hello_let';
