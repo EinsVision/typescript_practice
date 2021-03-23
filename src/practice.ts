@@ -1,42 +1,18 @@
-const message: string = 'hello world ts';
+// 1. string 설정하는 방법
+const message:string = 'hello typescript';
 console.log(message);
 
-let count = 0;
-count += 1;
+// 2. number 설정하는 방법 
+let count = 0; // let count:number = 0; 로 설정한 것과 같은 선언이다.
+// count = 'hello' // 이렇게 문자열을 선언하면 error를 발생한다.
 
-// count = 'messages '; (error 발생)
+let count1:number = 1;
 
+// 3. boolean 설정하는 방법
 const done: boolean = false;
 
-const numbers: number[] = [1,2,3];
+// 4. 배열을 설정하는 방법
+const numbers: number[] = [1,2,3,4,5];
+
+// 5. 문자열 배열을 설정하는 방법
 const messages: string[] = ['hello', 'world'];
-
-// messages.push(1); (error 발생)
-
-let mightBeUndefined: string | undefined = 'string for undefined';
-let nullableNumber: number | null = null;
-
-let color: 'red' | 'orange' | 'yellow' = 'red';
-color='yellow';
-// color='green'; (error 발생)
-
-// 함수 연습
-function sum(x: number, y: number): number {
-  return x+y;
-}
-
-const result = sum(1, 2);
-console.log('result: ', result);
-
-function sumArray(numbers: number[]): number {
-  return numbers.reduce((acc, current) => acc+current, 0);
-}
-
-const totalSum = sumArray([1,2,3,4,5,6,7,8,9,10]);
-console.log(totalSum);
-
-function returnNoting() {
-  console.log('return Noting');
-}
-
-returnNoting();
