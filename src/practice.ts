@@ -91,3 +91,10 @@ console.log( 'Circle1: ', Circle1, 'Rectangle1 : ', Rectangle1);
 // 13. compiler 확인해 보기
 var hello = 'hello_var';
 let hello1 = 'hello_let';
+
+let timeoutPromise = new Promise((resolve, reject) => {
+  setTimeout(()=>{
+    resolve('1 sec');
+  }, 1000);
+})
+timeoutPromise.then(console.log);
